@@ -16,7 +16,7 @@ const calcTempAmplitudeNew = function (temps1, temps2) {
   let min = temps[0];
 
   for (let i = 0; i < temps.length; i++) {
-    let currTemp = temps[i];
+    const currTemp = temps[i];
 
     if (typeof currTemp !== 'number') continue;
     if (currTemp > max) max = currTemp;
